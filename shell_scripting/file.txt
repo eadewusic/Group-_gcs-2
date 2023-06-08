@@ -1,19 +1,2 @@
 #!/bin/bash
-
-# Get today's date in the format "yyyy-mm-dd"
-today=$(date +%Y-%m-%d)
-
-# Print the strings on the screen
-echo "one"
-echo "two"
-echo "three"
-echo "four"
-echo "five"
-
-# Create a text file with today's date in the filename
-filename="$today-file.txt"
-echo -e "one\ntwo\nthree\nfour\nfive" > "$filename"
-
-# Display the filename
-echo "Created file: $filename"
-
+echo -e "one\ntwo\nthree\nfour\nfive"
