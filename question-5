@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Prompt the user for a path
+read -p "Enter a path: " path
+
+# Check if the path is a directory
+if [ -d "$path" ]; then
+  echo "The given path is a directory."
+  echo "Files in the directory:"
+  ls "$path"
+else
+  echo "The given path is not a directory."
+  read -p "Enter the path of a directory: " newPath
+  echo "Files in the directory:"
+  ls "$newPath"
+fi
